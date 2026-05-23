@@ -4,125 +4,316 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy - Bottle Flip Challenge</title>
+    <meta name="description" content="Privacy Policy for Bottle Flip Challenge Android Game - COPPA & Families Policy Compliant">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #0a0a2e;
-            color: #c8d2ff;
-            line-height: 1.8;
-            padding: 20px;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: linear-gradient(135deg, #0f0c29 0%, #1a1a2e 50%, #16213e 100%);
+            color: #e0e0e0;
+            min-height: 100vh;
+            line-height: 1.7;
         }
         .container {
             max-width: 800px;
             margin: 0 auto;
-            background: rgba(30, 31, 85, 0.6);
-            border: 1px solid rgba(148, 170, 255, 0.15);
+            padding: 40px 24px 80px;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 48px;
+            padding: 40px 24px;
+            background: linear-gradient(135deg, rgba(99, 102, 241, 0.15), rgba(139, 92, 246, 0.1));
             border-radius: 20px;
-            padding: 40px 30px;
+            border: 1px solid rgba(99, 102, 241, 0.2);
+            backdrop-filter: blur(10px);
         }
-        h1 {
-            color: #94aaff;
+        .header .icon {
+            font-size: 56px;
+            margin-bottom: 16px;
+        }
+        .header h1 {
             font-size: 28px;
+            font-weight: 700;
+            background: linear-gradient(135deg, #818cf8, #a78bfa);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
             margin-bottom: 8px;
-            text-align: center;
         }
-        .subtitle {
-            text-align: center;
-            color: #71729d;
+        .header .app-name {
+            font-size: 16px;
+            color: #a5b4fc;
+            font-weight: 500;
+        }
+        .header .updated {
             font-size: 13px;
-            margin-bottom: 30px;
+            color: #8b8fa3;
+            margin-top: 8px;
+        }
+
+        /* COPPA Compliance Badge */
+        .compliance-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: linear-gradient(135deg, rgba(34, 197, 94, 0.15), rgba(16, 185, 129, 0.1));
+            border: 1px solid rgba(34, 197, 94, 0.3);
+            border-radius: 12px;
+            padding: 10px 20px;
+            margin-top: 16px;
+            font-size: 13px;
+            font-weight: 600;
+            color: #4ade80;
+        }
+        .compliance-badge .dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: #4ade80;
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.4; }
+        }
+
+        section {
+            margin-bottom: 32px;
+            padding: 28px;
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 16px;
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            transition: border-color 0.3s;
+        }
+        section:hover {
+            border-color: rgba(99, 102, 241, 0.2);
         }
         h2 {
-            color: #3fff8b;
-            font-size: 18px;
-            margin-top: 28px;
-            margin-bottom: 10px;
-            padding-bottom: 6px;
-            border-bottom: 1px solid rgba(63, 255, 139, 0.15);
+            font-size: 20px;
+            font-weight: 600;
+            color: #c7d2fe;
+            margin-bottom: 14px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
         }
-        p { margin-bottom: 12px; font-size: 15px; }
-        ul {
-            margin: 10px 0 14px 24px;
+        h2 .emoji {
+            font-size: 22px;
+        }
+        p {
+            color: #b0b8cc;
+            margin-bottom: 12px;
             font-size: 15px;
         }
-        li { margin-bottom: 6px; }
-        .highlight {
-            color: #FFD700;
-            font-weight: 600;
+        ul {
+            list-style: none;
+            padding: 0;
         }
-        .app-name {
-            color: #94aaff;
-            font-weight: 700;
+        ul li {
+            padding: 8px 0 8px 24px;
+            position: relative;
+            color: #b0b8cc;
+            font-size: 15px;
+        }
+        ul li::before {
+            content: '•';
+            position: absolute;
+            left: 8px;
+            color: #818cf8;
+            font-weight: bold;
+        }
+        
+        /* Important callout for children's section */
+        .callout {
+            background: linear-gradient(135deg, rgba(251, 191, 36, 0.1), rgba(245, 158, 11, 0.05));
+            border: 1px solid rgba(251, 191, 36, 0.25);
+            border-radius: 12px;
+            padding: 16px 20px;
+            margin: 16px 0;
+            font-size: 14px;
+            color: #fbbf24;
+        }
+        .callout-green {
+            background: linear-gradient(135deg, rgba(34, 197, 94, 0.1), rgba(16, 185, 129, 0.05));
+            border: 1px solid rgba(34, 197, 94, 0.25);
+            color: #4ade80;
+        }
+
+        a {
+            color: #818cf8;
+            text-decoration: none;
+            border-bottom: 1px solid rgba(129, 140, 248, 0.3);
+            transition: border-color 0.3s;
+        }
+        a:hover {
+            border-color: #818cf8;
         }
         .footer {
             text-align: center;
-            margin-top: 30px;
-            padding-top: 20px;
-            border-top: 1px solid rgba(148, 170, 255, 0.1);
-            color: #71729d;
-            font-size: 12px;
+            padding: 32px 0;
+            font-size: 13px;
+            color: #6b7280;
+            border-top: 1px solid rgba(255, 255, 255, 0.06);
+            margin-top: 40px;
         }
-        a { color: #94aaff; }
+        .footer .dev {
+            color: #8b8fa3;
+            margin-top: 4px;
+        }
+        
+        /* Responsive */
+        @media (max-width: 600px) {
+            .container { padding: 20px 16px 60px; }
+            .header { padding: 28px 16px; }
+            .header h1 { font-size: 22px; }
+            section { padding: 20px 16px; }
+            h2 { font-size: 17px; }
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>🍾 Privacy Policy</h1>
-        <p class="subtitle">Bottle Flip Challenge | Last Updated: April 19, 2026</p>
+        <div class="header">
+            <div class="icon">🍾</div>
+            <h1>Privacy Policy</h1>
+            <div class="app-name">Bottle Flip Challenge</div>
+            <div class="updated">Last Updated: May 23, 2026</div>
+            <div class="compliance-badge">
+                <span class="dot"></span>
+                COPPA & Families Policy Compliant
+            </div>
+        </div>
 
-        <h2>1. Introduction</h2>
-        <p>Welcome to <span class="app-name">Bottle Flip Challenge</span> ("we", "our", "us"). This privacy policy explains how we collect, use, and protect your information when you use our mobile application.</p>
-        <p>By using our app, you agree to the terms outlined in this privacy policy.</p>
+        <!-- Section 1: Introduction -->
+        <section>
+            <h2><span class="emoji">📋</span> 1. Introduction</h2>
+            <p>Welcome to <strong>Bottle Flip Challenge</strong> ("we", "our", "us"), developed by <strong>Jayesh | Kinetic Arcade</strong>. This privacy policy explains how we handle information in our mobile application.</p>
+            <p>Our app is designed to be <strong>safe for all ages, including children</strong>. We comply with the Children's Online Privacy Protection Act (COPPA), the General Data Protection Regulation (GDPR) requirements for children, and Google Play's Families Policy.</p>
+            <p>By using our app, you agree to the terms outlined in this privacy policy.</p>
+        </section>
 
-        <h2>2. Information We Collect</h2>
-        <p>Our app is designed with your privacy in mind. Here's what we collect:</p>
-        <ul>
-            <li><span class="highlight">Game Data:</span> High scores, achievements, game progress, and settings are stored <strong>locally on your device only</strong>. We do not upload this data to any server.</li>
-            <li><span class="highlight">Player Names:</span> Names entered in multiplayer (Pass & Play) mode are stored locally and are never transmitted online.</li>
-            <li><span class="highlight">Advertising Data:</span> Our app uses Google AdMob to show ads. Google may collect device identifiers and usage data for ad personalization. See Google's privacy policy for details.</li>
-        </ul>
+        <!-- Section 2: Children's Privacy (IMPORTANT - moved up) -->
+        <section>
+            <h2><span class="emoji">👶</span> 2. Children's Privacy & COPPA Compliance</h2>
+            <div class="callout-green callout">
+                ✅ Our app is designed to be safe for children of all ages and fully complies with COPPA and Google Play's Families Policy.
+            </div>
+            <p>We take children's privacy very seriously. Here is what you need to know:</p>
+            <ul>
+                <li><strong>No personal information collection:</strong> We do not collect, store, or share any personal information from children under 13 (or the applicable age in your jurisdiction).</li>
+                <li><strong>No account required:</strong> Our app does not require registration, login, or any personal data to play.</li>
+                <li><strong>No behavioral tracking:</strong> We do not track, profile, or perform behavioral analysis on any users, including children.</li>
+                <li><strong>No interest-based advertising:</strong> Our app does NOT use interest-based advertising or remarketing for any users. All ads served are child-safe and age-appropriate (rated "G" — General Audiences).</li>
+                <li><strong>No social features for children:</strong> The app does not include social networking features, chat rooms, or any way for children to communicate with other users online.</li>
+                <li><strong>Parental controls:</strong> Parents can clear all locally stored game data by clearing the app's storage in device settings, or by uninstalling the app.</li>
+            </ul>
+            <p>If you are a parent or guardian and believe your child has inadvertently provided personal information, please contact us immediately at the email address below. We will promptly delete any such data.</p>
+        </section>
 
-        <h2>3. Third-Party Services</h2>
-        <p>Our app uses the following third-party services:</p>
-        <ul>
-            <li><strong>Google AdMob</strong> — For displaying advertisements. AdMob may collect device information, ad interaction data, and use cookies or similar technologies. <a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a></li>
-        </ul>
+        <!-- Section 3: Information We Collect -->
+        <section>
+            <h2><span class="emoji">📊</span> 3. Information We Collect</h2>
+            <p>Our app is designed with privacy in mind. We collect <strong>minimal data</strong>:</p>
+            <ul>
+                <li><strong>Game Data (Local Only):</strong> High scores, achievements, game progress, and settings are stored <strong>locally on your device only</strong>. We do not upload this data to any server.</li>
+                <li><strong>Player Names (Local Only):</strong> Names entered in multiplayer (Pass & Play) mode are stored locally and are <strong>never transmitted online</strong>.</li>
+            </ul>
+            <div class="callout-green callout">
+                🔒 We do NOT collect: names, email addresses, phone numbers, location data, photos, contacts, or any other personally identifiable information.
+            </div>
+        </section>
 
-        <h2>4. Data Storage</h2>
-        <p>All game-related data (scores, settings, achievements, player names) is stored <strong>locally on your device</strong> using browser local storage. We do not have access to this data, and it is not transmitted to any external servers.</p>
+        <!-- Section 4: Advertising -->
+        <section>
+            <h2><span class="emoji">📢</span> 4. Advertising</h2>
+            <p>Our app uses <strong>Google AdMob</strong>, a <strong>Google Play Families Self-Certified Ads SDK</strong>, to display advertisements.</p>
+            <div class="callout">
+                ⚠️ Important: Our app is configured with child-directed treatment. This means:
+            </div>
+            <ul>
+                <li><strong>Child-safe ads only:</strong> All ads are tagged for child-directed treatment (COPPA compliance flag enabled).</li>
+                <li><strong>Maximum ad content rating: "G" (General):</strong> Only family-friendly, age-appropriate ads are displayed.</li>
+                <li><strong>No interest-based advertising:</strong> Ads are NOT personalized based on user behavior or browsing history.</li>
+                <li><strong>No remarketing:</strong> We do not use remarketing or retargeting for any users.</li>
+                <li><strong>No deceptive ads:</strong> Ads are clearly distinguishable from game content and are not designed to cause accidental clicks.</li>
+                <li><strong>Rewarded ads only:</strong> We use opt-in rewarded video ads — users choose to watch ads in exchange for in-game rewards. No forced or disruptive ads.</li>
+            </ul>
+            <p>Google AdMob may collect limited, non-personal device information (such as device type and operating system version) solely for ad serving purposes. For more details, see: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a></p>
+        </section>
 
-        <h2>5. Children's Privacy</h2>
-        <p>Our app is suitable for all ages. We do not knowingly collect personal information from children under 13. The game does not require any personal information to play. If you believe your child has provided personal information, please contact us.</p>
+        <!-- Section 5: In-App Purchases -->
+        <section>
+            <h2><span class="emoji">💳</span> 5. In-App Purchases</h2>
+            <p>Our app offers optional in-app purchases (cosmetic bottle skins) through <strong>Google Play Billing</strong>. All transactions are processed securely through Google Play. We do not collect or store any payment information.</p>
+            <p>Parents/guardians can manage and restrict in-app purchases through Google Play's parental control settings.</p>
+        </section>
 
-        <h2>6. Permissions</h2>
-        <p>Our app may request the following permissions:</p>
-        <ul>
-            <li><span class="highlight">Internet Access:</span> Required for loading advertisements and CDN resources.</li>
-            <li><span class="highlight">Motion Sensors (Optional):</span> For gyroscope-based tilt controls. This data is processed locally and never transmitted.</li>
-        </ul>
+        <!-- Section 6: Data Storage -->
+        <section>
+            <h2><span class="emoji">💾</span> 6. Data Storage & Security</h2>
+            <p>All game-related data (scores, settings, achievements, player names) is stored <strong>locally on your device</strong> using browser local storage within the app. We do not have access to this data, and it is <strong>not transmitted to any external servers</strong>.</p>
+            <p>Since all data is stored locally, it is protected by your device's own security measures (screen lock, encryption, etc.).</p>
+        </section>
 
-        <h2>7. Data Security</h2>
-        <p>We take reasonable measures to protect your information. Since all game data is stored locally on your device, it is protected by your device's own security measures.</p>
+        <!-- Section 7: Third-Party Services -->
+        <section>
+            <h2><span class="emoji">🔗</span> 7. Third-Party Services</h2>
+            <p>Our app uses the following third-party services:</p>
+            <ul>
+                <li><strong>Google AdMob</strong> (Families Self-Certified Ads SDK) — For displaying child-safe advertisements. <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a></li>
+                <li><strong>Google Play Billing</strong> — For processing in-app purchases. <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a></li>
+            </ul>
+            <p>We do not use any analytics, crash reporting, or other third-party tracking services.</p>
+        </section>
 
-        <h2>8. Your Rights</h2>
-        <p>You can:</p>
-        <ul>
-            <li>Clear all game data by clearing the app's storage in your device settings</li>
-            <li>Opt out of personalized ads through your device's ad settings</li>
-            <li>Uninstall the app to remove all locally stored data</li>
-        </ul>
+        <!-- Section 8: Permissions -->
+        <section>
+            <h2><span class="emoji">🔑</span> 8. App Permissions</h2>
+            <p>Our app requests the following permissions:</p>
+            <ul>
+                <li><strong>INTERNET:</strong> Required for loading advertisements from Google AdMob and processing in-app purchases through Google Play Billing.</li>
+                <li><strong>ACCESS_NETWORK_STATE:</strong> Required to check network connectivity before loading ads.</li>
+                <li><strong>BILLING:</strong> Required for Google Play in-app purchases.</li>
+            </ul>
+            <p>We do not request access to camera, microphone, contacts, location, storage, or any other sensitive device permissions.</p>
+        </section>
 
-        <h2>9. Changes to This Policy</h2>
-        <p>We may update this privacy policy from time to time. Any changes will be reflected on this page with an updated "Last Updated" date.</p>
+        <!-- Section 9: Your Rights -->
+        <section>
+            <h2><span class="emoji">⚖️</span> 9. Your Rights</h2>
+            <p>You (or your parent/guardian) have the following rights:</p>
+            <ul>
+                <li><strong>Delete data:</strong> Clear all game data by clearing the app's storage in your device settings.</li>
+                <li><strong>Opt out of ads:</strong> You can reset your advertising identifier or opt out of personalized ads through your device's ad settings (Settings → Google → Ads).</li>
+                <li><strong>Remove app:</strong> Uninstall the app to remove all locally stored data completely.</li>
+                <li><strong>Parental controls:</strong> Parents can use Google Play's Family Link and parental controls to manage app usage and in-app purchases.</li>
+            </ul>
+        </section>
 
-        <h2>10. Contact Us</h2>
-        <p>If you have any questions about this privacy policy, please contact us at:</p>
-        <p>📧 Email: <a href="mailto:jayeshborse2004@gmail.com">jayeshborse2004@gmail.com</a></p>
+        <!-- Section 10: Changes -->
+        <section>
+            <h2><span class="emoji">🔄</span> 10. Changes to This Policy</h2>
+            <p>We may update this privacy policy from time to time. Any changes will be reflected on this page with an updated "Last Updated" date. We encourage you to review this policy periodically.</p>
+        </section>
+
+        <!-- Section 11: Contact -->
+        <section>
+            <h2><span class="emoji">📧</span> 11. Contact Us</h2>
+            <p>If you have any questions about this privacy policy, or if you are a parent/guardian with concerns about your child's privacy, please contact us at:</p>
+            <p>📧 Email: <a href="mailto:jayeshborse2004@gmail.com">jayeshborse2004@gmail.com</a></p>
+            <p>We will respond to privacy inquiries within 30 days.</p>
+        </section>
 
         <div class="footer">
             <p>© 2026 Bottle Flip Challenge. All rights reserved.</p>
-            <p>Developed by Jayesh | Kinetic Arcade</p>
+            <p class="dev">Developed by Jayesh | Kinetic Arcade</p>
         </div>
     </div>
 </body>
